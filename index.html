@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sistema de Gestión Ambiental</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <img src="media/logo1.png" alt="logo" class="logo" />
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+    <nav id="main-nav" class="hidden">
+      <ul>
+        <li><a href="#mision">Misión</a></li>
+        <li><a href="#vision">Visión</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="login.html">Iniciar Sesión</a></li>
+        <li><a href="registro.html">Registrarse</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="bienvenida">
+      <h1>Bienvenido al Sistema de Gestión Ambiental</h1>
+      <p>Facilitamos el manejo ambiental de tu empresa con soluciones eficaces y sostenibles.</p>
+    </section>
+
+    <section id="mision" class="info">
+      <h2>Misión</h2>
+      <p>Brindar soluciones ambientales innovadoras, sostenibles y eficaces que contribuyan al bienestar de nuestros clientes y del entorno.</p>
+    </section>
+
+    <section id="vision" class="info">
+      <h2>Visión</h2>
+      <p>Ser líderes en gestión ambiental, destacándonos por la calidad, profesionalismo y compromiso con el desarrollo sostenible.</p>
+    </section>
+
+    <section id="servicios" class="info">
+      <h2>Servicios</h2>
+      <ul>
+        <li>Fumigación profesional</li>
+        <li>Desinfección de espacios</li>
+        <li>Control de roedores</li>
+        <li>Control de palomas</li>
+        <li>Control de murciélagos</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Sistema de Gestión Ambiental. Todos los derechos reservados.</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById("main-nav");
+      nav.classList.toggle("hidden");
+    }
+  </script>
+</body>
+</html>
